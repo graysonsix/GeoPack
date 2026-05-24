@@ -1,0 +1,43 @@
+---
+title: "main-functions"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{main-functions}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+## Planned Functions for GeoPack
+
+### Plot Regime Changes
+
+```{r}
+plot_regime_changes(democracy_data, top_n = 10, color_by = "continent")
+```
+
+This should make a horizontal bar chart of the top N most politically 
+unstable countries, colored by continent, showing total regime changes 
+from 1950–2022.
+
+---
+
+### Summarise Country Economics
+
+```{r}
+summarise_country(masterSet, country = "Thailand")
+```
+
+This should return a summary table for a given country showing GDP growth, 
+unemployment rate, and number of regime changes over time.
+
+---
+
+### Plot GDP vs Unemployment
+
+```{r}
+plot_gdp_vs_unemployment(masterSet, start_year = 2000, end_year = 2020, democracy_only = FALSE)
+```
+
+This should make a scatterplot of unemployment rate vs log GDP, with 
+democracies and non-democracies colored differently and optional filtering 
+by year range or democracy status.

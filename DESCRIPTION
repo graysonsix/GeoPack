@@ -1,11 +1,14 @@
 Package: GeoPack
-Title: What the Package Does (One Line, Title Case)
+Title: Tools for Analyzing Global Democracy and Economic Data
 Version: 0.0.0.9000
 Authors@R: c(
     person("Grayson", "Six", , , role = c("aut", "cre")),
     person("Braden", "ODonnnell", , , role = "aut"),
     person("Brayden", "Philabaum", , , role = "aut"))
-Description: What the package does (one paragraph).
+Description: Provides functions for loading, summarizing, and visualizing 
+    global democracy and economic data. Includes tools for looking at regime 
+    changes, GDP trends, and the relationship between democracy status and 
+    economic indicators across countries from 1950 to 2022.
 License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
     license
 Encoding: UTF-8
@@ -13,3 +16,7 @@ Roxygen: list(markdown = TRUE)
 RoxygenNote: 8.0.0
 URL: https://github.com/graysonsix/GeoPack
 BugReports: https://github.com/graysonsix/GeoPack/issues
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
