@@ -2,7 +2,7 @@ Package: GeoPack
 Title: Tools for Analyzing Global Democracy and Economic Data
 Version: 0.0.0.9000
 Authors@R: c(
-    person("Grayson", "Six", , , role = c("aut", "cre")),
+    person("Grayson", "Six", ,"gsix@calpoly.edu", role = c("aut", "cre")),
     person("Braden", "ODonnnell", , , role = "aut"),
     person("Brayden", "Philabaum", , , role = "aut"))
 Description: Provides functions for loading, summarizing, and visualizing 
@@ -18,5 +18,7 @@ URL: https://github.com/graysonsix/GeoPack
 BugReports: https://github.com/graysonsix/GeoPack/issues
 Suggests: 
     knitr,
-    rmarkdown
+    rmarkdown,
+    testthat (>= 3.0.0)
 VignetteBuilder: knitr
+Config/testthat/edition: 3
