@@ -12,6 +12,7 @@ vignette: >
 ### Plot Regime Changes
 
 ```{r}
+democracy_data = load_data()
 plot_regime_changes(democracy_data, top_n = 10, color_by = "continent")
 ```
 
@@ -24,6 +25,7 @@ from 1950–2022.
 ### Summarise Country Economics
 
 ```{r}
+masterSet<-load_data()
 summarise_country(masterSet, country = "Thailand")
 ```
 
@@ -35,6 +37,7 @@ unemployment rate, and number of regime changes over time.
 ### Plot GDP vs Unemployment
 
 ```{r}
+masterSet<-load_data()
 plot_gdp_vs_unemployment(masterSet, start_year = 2000, end_year = 2020, democracy_only = FALSE)
 ```
 

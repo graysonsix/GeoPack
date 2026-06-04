@@ -15,6 +15,7 @@
 #' @export
 plot_regime_changes <- function(data, top_n = 10, color_by = "continent") {
 
+
   # validate inputs
   if (!is.data.frame(data)) stop("`data` must be a data frame.")
   if (!is.numeric(top_n) || top_n < 1) stop("`top_n` must be a positive number.")

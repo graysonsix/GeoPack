@@ -18,6 +18,6 @@ summarise_country <- function(data, country) {
   result <- filter_country(data, country)
 
   result |>
-    dplyr::select(dplyr::any_of(c("year", "gdp_growth", "unemployment_rate", "regime_category"))) |>
-    dplyr::arrange(year)
+    dplyr::select(c("year", "gdp_growth", "unemployment_rate", "regime_category")) |>
+    dplyr::arrange(-year)
 }

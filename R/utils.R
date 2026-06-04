@@ -11,5 +11,5 @@ filter_country <- function(data, country) {
   if (!country %in% data$country_name) {
     stop(paste0("'", country, "' was not found in the data."))
   }
-  dplyr::filter(data, country_name == country)
+  dplyr::filter(data, country_name == .env$country)
 }
