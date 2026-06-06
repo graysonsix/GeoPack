@@ -9,6 +9,15 @@ vignette: >
 
 ## Planned Functions for GeoPack
 
+### Load Data
+
+```{r}
+democracy_data <- load_data()
+head(democracy_data)
+```
+
+This loads the full merged dataset from the package's inst/ folder.
+
 ### Plot Regime Changes
 
 ```{r}
@@ -44,3 +53,39 @@ plot_gdp_vs_unemployment(masterSet, start_year = 2000, end_year = 2020, democrac
 This should make a scatterplot of unemployment rate vs log GDP, with 
 democracies and non-democracies colored differently and optional filtering 
 by year range or democracy status.
+
+### Filter Year Range
+
+```{r}
+masterSet <- load_data()
+filter_year_range(masterSet, start_year = 2000, end_year = 2019)
+```
+
+This filters the dataset to a given year range and drops rows with 
+missing values in key economic and political columns.
+
+---
+
+### Summarise Continent
+
+```{r}
+masterSet <- load_data()
+summarise_continent(masterSet, year_range = c(2000, 2020))
+```
+
+This returns a summary table by continent showing average GDP growth, 
+average unemployment rate, and percentage of country-years classified 
+as democratic.
+
+---
+
+### Analyse GDP and Democracy
+
+```{r}
+masterSet <- load_data()
+analyse_gdp_democracy(masterSet, start_year = 1990, end_year = 2019)
+```
+
+This fits a linear regression of log GDP on unemployment rate, democracy 
+status, their interaction, and year. Returns a tidy coefficient table 
+with 95% confidence intervals. 2020 is excluded due to COVID-19.

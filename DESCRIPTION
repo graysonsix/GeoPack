@@ -9,13 +9,19 @@ Description: Provides functions for loading, summarizing, and visualizing
     global democracy and economic data. Includes tools for looking at regime 
     changes, GDP trends, and the relationship between democracy status and 
     economic indicators across countries from 1950 to 2022.
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 8.0.0
 URL: https://github.com/graysonsix/GeoPack
 BugReports: https://github.com/graysonsix/GeoPack/issues
+Imports:
+    broom,
+    countrycode,
+    dplyr,
+    forcats,
+    ggplot2,
+    readr
 Suggests: 
     knitr,
     rmarkdown,
