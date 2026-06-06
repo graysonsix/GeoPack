@@ -1,2 +1,4 @@
 ^GeoPack\.Rproj$
 ^\.Rproj\.user$
+^\.positai$
+^\.claude$
