@@ -21,7 +21,8 @@ Imports:
     dplyr,
     forcats,
     ggplot2,
-    readr
+    readr,
+    arrow
 Suggests: 
     knitr,
     rmarkdown,

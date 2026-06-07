@@ -7,8 +7,9 @@
 load_data()
 }
 \value{
-A data frame containing democracy data from 1950-2022.
+A data frame containing democracy and economic data from 1950-2022.
 }
 \description{
-Loads the democracy dataset from the TidyTuesday repository.
+Loads the full merged dataset from the package's inst/ folder.
+Uses arrow for efficient file reading.
 }
